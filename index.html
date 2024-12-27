@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Netflix</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tv-shows">TV Shows</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#my-list">My List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Featured Movie</h1>
+            <p>Experience the thrill of the latest blockbuster!</p>
+            <button id="watchNowBtn">Watch Now</button>
+        </div>
+    </section>
+    <main>
+        <section id="home" class="category hidden">
+            <h2>Trending Now</h2>
+            <div class="movie-row">
+                <a href="https://www.netflix.com/title/80187902" target="_blank">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.qrp7Foszorowi0dJbwJhnAHaEK&pid=Api" alt="Carry On">
+                </a>
+                <a href="https://www.netflix.com/title/80187902" target="_blank">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.LxWemzpKSP8PAIvxOiGlvwHaEK&pid=Api" alt="The Six Triple Eight">
+                </a>
+                <a href="https://www.netflix.com/title/80187902" target="_blank">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.YIkJtuAyjoAroPV9T-dSYQHaK-&pid=Api" alt="It Ends With Us">
+                </a>
+                <a href="https://www.netflix.com/title/80187902" target="_blank">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP._0qDLezT3YouuTJASgfexwHaLH&pid=Api" alt="The Dead Don't Die">
+                </a>
+            </div>
+        </section>
+
+        <section id="tv-shows" class="category hidden">
+            <h2>Popular TV Shows</h2>
+            <div class="movie-row">
+                <a href="https://www.netflix.com/title/80175722" target="_blank">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.b0BTX-WlG3rwCLvjp3-x0gHaEK&pid=Api" alt="Cobra Kai">
+                </a>
+                <a href="https://www.netflix.com/title/80186996" target="_blank">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.rAIxXdOsa6hfbOwlOWuEHAHaJQ&pid=Api" alt="Vikings: Valhalla">
+                </a>
+                <a href="https://www.netflix.com/title/81047485" target="_blank">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.sDUeA8SJ1aV_01x8sM57-QHaJQ&pid=Api" alt="Simone Biles Rising">
+                </a>
+                <a href="https://www.netflix.com/title/81040344" target="_blank">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.dX2Z9d4tDfJQZ3S5ijUfRQHaEK&pid=Api" alt="Squid Game Season 2">
+                </a>
+            </div>
+        </section>
+
+        <section id="movies" class="category hidden">
+            <h2>Top Movies</h2>
+            <div class="movie-row">
+                <a href="https://www.netflix.com/title/80187902" target="_blank">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.qrp7Foszorowi0dJbwJhnAHaEK&pid=Api" alt="Carry On">
+                </a>
+                <a href="https://www.netflix.com/title/81030672" target="_blank">
+                    <img src="https://tse1.mm.bing.net/th?id=OIF.zwx9QQOf%2fvbH98E54D9HOQ&pid=Api" alt="The Six Triple Eight">
+                </a>
+                <a href="https://www.netflix.com/title/81030672" target="_blank">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.cmw16MBbg7oXlqdUDQL4HAHaLu&pid=Api" alt="Dr. Seuss' The Grinch">
+                </a>
+                <a href="https://www.netflix.com/title/81030672" target="_blank">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.1okyVhsaR7vr1YUWfTKIQgHaKX&pid=Api" alt="Enola Holmes 2">
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Netflix Clone &copy; 2024</p>
+    </footer>
+
+    <script>
+        document.getElementById('watchNowBtn').addEventListener('click', function() {
+            document.getElementById('home').classList.toggle('hidden');
+            document.getElementById('tv-shows').classList.toggle('hidden');
+            document.getElementById('movies').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
